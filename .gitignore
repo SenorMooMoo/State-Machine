@@ -6,6 +6,9 @@ project.godot
 scn/
 override.cfg
 addons/
+project.godot
+debug/
+
 
 # Godot-specific ignores
 .import/

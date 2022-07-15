@@ -54,14 +54,4 @@ anchor_bottom = 1.0
 
 [node name="ControlsPanel" parent="Control" instance=ExtResource( 4 )]
 
-[node name="Button" type="Button" parent="."]
-margin_left = 1017.0
-margin_top = 621.0
-margin_right = 1064.0
-margin_bottom = 641.0
-rect_scale = Vector2( 5.25912, 4.31713 )
-text = "Press"
-
-[connection signal="button_down" from="Button" to="Player/StateMachine" method="_on_Button_button_down"]
-
 [editable path="Player"]
