@@ -34,7 +34,7 @@ window/stretch/aspect="expand"
 
 [editor_plugins]
 
-enabled=PoolStringArray(  )
+enabled=PoolStringArray( "res://addons/github-integration/plugin.cfg" )
 
 [gdnative]
 
