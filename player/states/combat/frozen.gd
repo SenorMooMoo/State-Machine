@@ -8,6 +8,10 @@ Todo:
 	3. Add vizual effect
 	4. Write unit test
 """
-func _ready():
-	#add some code
-	pass # Replace with function body.
+func enter():
+	owner.get_node("AnimationPlayer").play("stagger")
+
+
+func _on_animation_finished(anim_name):
+	assert(anim_name == "stagger")
+	emit_signal("finished", "previous")

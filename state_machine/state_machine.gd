@@ -17,10 +17,17 @@ var states_stack = []
 var current_state = null
 var _active = false setget set_active
 
+"""
+ Called when the node is "ready", i.e. when both the node and its children
+ have entered the scene tree.If the node has children, their _ready callbacks
+ get triggered first,and the parent node will receive the ready
+ notification afterwards.
+"""
 func _ready():
 	if not start_state:
 		start_state = get_child(0).get_path()
 	for child in get_children():
+		#connnect, connects node to signal
 		var err = child.connect("finished", self, "_change_state")
 		if err:
 			printerr(err)
