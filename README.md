@@ -1,31 +1,20 @@
-# Hierarchical Finite State Machine
+# Hierarchical Finite State Machine Modified
 
-This example shows how to apply the State machine programming
-pattern in GDscript, including Hierarchical States, and a
-pushdown automaton.
+This is a work in progress of game that takes in advantage of a state machine
 
 Language: GDScript
 
 Renderer: GLES 2
 
-Check out this demo on the asset library: https://godotengine.org/asset-library/asset/516
+## Why?
 
-## Why use a state machine
+States are common and hopefully following this design pattern will make it easier to develop.
 
-States are common in games. You can use the pattern to:
-
-1. Separate each behavior and transitions between behaviors,
-   thus make scripts shorter and easier to manage.
-
-2. Respect the Single Responsibility Principle.
-   Each State object represents one action.
-
-3. Improve your code's structure. Look at the scene tree and
-   FileSystem tab: without looking at the code, you'll know
-   what the Player can or cannot do.
-
-You can read more about States in the excellent
+I will be using this book as resource
 [Game Programming Patterns ebook](https://gameprogrammingpatterns.com/state.html).
+
+And of course I got the intial project from 
+[Godot Hierarchical Finite State Machine](https://github.com/godotengine/godot-demo-projects/tree/master/2d/finite_state_machine)
 
 ## Screenshots
 
